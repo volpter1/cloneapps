@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mainbackground{
+            background-color: rgb(243 244 246) ;
+        }
+
+
+        /* CSSforfirstpage */
+
+
+        .header{
+            display: flex;
+            padding-left: 10px;
+            height: 58px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .firstpage{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contactbutton{
+            height: 31.5px;
+            width: 153px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            border-radius: 15.75px;
+            border: 3px solid black;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            
+            cursor: pointer;
+            margin-right: 40px;  
+        }
+        #firstcolortext{
+            color: blue;
+        }
+        .Text{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            flex-direction: column;
+            font-size: 15px;
+        }
+        #para{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .blurblue1{
+            height: 200px;
+            width: 300px;
+            background-color: #6a8dd8;
+            filter: blur(64px);
+            opacity: 0.25;
+            position: absolute;
+            margin-left: 42rem ;
+        }
+        .textbutton{
+            height: 36px;
+            width: 250px;
+            /* font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+            text-align: center;
+            margin-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-bottom: 20px;
+            border-radius: 18px;
+            background-color: #2563EB;
+            color: white;
+            border: 2px solid rgb(229, 231, 235);
+            cursor: pointer;
+        }
+        #homeimage{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        /* CSSforfirstpage */
+
+
+
+        /* CSSforsecondpage */
+
+
+        .secondpage{
+            margin-top: 15px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #headingof2ndpage{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 20px;
+            margin-top: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .contentof2ndpage{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 175px;
+        }
+        .textof2ndpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+        }
+        #headingof2ndpagetext{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 20px;
+        }
+        #maintextof2ndpage{
+            margin-top: 8px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+        }
+        .Getstarted{
+            height: 36px;
+            width: 150px;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: #2563EB;
+            border: 1px solid white;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+
+        /* CSSforsecondpageends */
+
+
+        /* CSSforthirdpage */
+
+        .thirdpage{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textofthirdpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #headingofthirdpage{
+            margin-top: 65px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 20px;
+        }
+        #textofheading{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .contentof3rdpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .first{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 45px;
+            gap: 15px;
+        }
+        .firstrow{
+            height: 170px;
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            border: solid white;
+            background-color: white;
+        }
+        .thirdpagecontentheading{
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 15px;
+        }
+        .thirdpagecontenttext{
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 13px;
+        }
+        .second{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+            margin-left: 15px;
+            gap: 15px;
+        }
+        .secondrow{
+            height: 170px;
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            border: solid white;
+            background-color: white;
+        }
+        .image{
+            margin-top: 15px;
+            background-color: rgb(243 244 246);
+            height: 53px;
+            width: 53px;
+            border-radius: 26.5px;
+        }
+        .Getstarted2{
+            height: 36px;
+            width: 150px;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: #2563EB;
+            border: 1px solid white;
+            margin-top: 55px;
+            margin-bottom: 35px;
+            cursor: pointer;
+        }
+
+        /* CSSforthirdpageends */
+
+
+         /* CSSforfourthpage */
+
+         .Fourthpage{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textoffourthpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #headingoffourthpage{
+            margin-top: 65px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 20px;
+        }
+        #textofheading{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .contentof4thpage{
+            display: flex;
+            align-self: start;
+        }
+        .leftcontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-top: 85px;
+            margin-left: 165px;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .leftcontainers{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 70px;
+            width: 500px;
+            gap: 5px;
+            border: 2px #e5e7eb;
+            border-radius: 5px;
+            box-shadow : 1px 1px 7px #ccc;
+        }
+        .fourthpageimage{
+            margin-left: 20px;
+        }
+        .fourthpagecontentheading{
+            margin-left: 10px;
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 15px;
+        }
+        .fourthpagecontenttext{
+            margin-left: 10px;
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 13px;
+        }
+        .textsofleftcontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .fourthpageimageex{
+            margin-left:35px ;
+        }
+        .fourthpagecontentheadingex{
+            margin-left: 25px;
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 15px;
+        }
+        .fourthpagecontenttextex{
+            margin-left: 25px;
+            margin-top: 5px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 13px
+        }
+        .rightcontent{
+            display: flex;
+            margin-left: 215px;
+        }
+        .mainimageof4thpage{
+            height: 420px;
+            width: 500px;
+            margin-top: 40px;   
+            position: absolute;
+        }
+
+
+        /* CSSforfourthpageends */
+
+        /* CSSforfifthpage */
+
+        .secondpage{
+            /* margin-top: 15px; */
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #headingof5thpage{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #headtextof5thpage{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            margin-top: 8px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+        }
+        .contentof2ndpage{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .textof2ndpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 45px;
+            margin-top: -45px;
+        }
+        #headingof2ndpagetext{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 20px;
+        }
+        #maintextof2ndpage{
+            margin-top: 15px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+        }
+        .Getstarted{
+            height: 36px;
+            width: 150px;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: #2563EB;
+            border: 1px solid white;
+            margin-top: 75px;
+            cursor: pointer;
+        }
+
+        /* EndofCSSforfifthpage */
+
+
+        /* CSSforsixthpage */
+        .Sixthpage{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .firstheading{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            /* margin-top: 50px; */
+            display: flex;
+            justify-content: center;
+        }
+        .firstcontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .firsthorizontalrow{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 100px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 264px;
+            width: 650px;
+            margin-top: 40px;
+
+        }
+        .image2{
+            height: 120px;
+            width: 120px;
+            border-radius: 60px;
+        }
+        .contentheading{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .contenttext{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 18px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }        
+        .secondhorizontalrow{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 100px;
+        }
+        .secondheading{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+        }
+        .secondcontent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* EndOfCSSforsixthpage */
+
+
+        /* CSSforseventhpage */
+
+        .Seventhpage{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .blurblue2{
+            height: 200px;
+            width: 300px;
+            background-color: #2563EB;
+            filter: blur(64px);
+            opacity: 0.15;
+            position: absolute;
+            margin-right: 1250px;
+            margin-top: 85px;
+        }
+        .contentof7thpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 264px;
+            width: 500px;
+            margin-top: 20px;
+        }
+        .headingof7thpage{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .textof7thpage{
+            margin-top: 8px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            text-align: center;
+        }
+        .Getstarted3{
+            height: 36px;
+            width: 150px;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: #2563EB;
+            border: 1px solid white;
+            margin-top: 45px;
+            cursor: pointer;
+        }
+        .blurred2{
+            height: 200px;
+            width: 300px;
+            background-color: #DC2626;
+            filter: blur(64px);
+            opacity: 0.15;
+            position: absolute;
+            margin-left: 1250px;
+            margin-top: 85px;
+        }
+
+        /* CSSforseventhpageends */
+
+        /* CSSforeigthpage */
+        .EigthPage{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .uppertextof8thpage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 264px;
+            width: 500px;
+            margin-top: 20px; */
+        }
+        .headingof7thpage{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 22px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .textof7thpage{
+            margin-top: 8px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            text-align: center;
+        }
+        .maincontent{
+            display: flex;
+            justify-content: center;
+            height: 375px;
+            width: 950px;
+            border: solid white ;
+            border-radius: 10px;
+            box-shadow : 1px 7px 15px #ccc;
+            margin-top: 80px;
+        }
+        /* .insidediv{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            height: 350px;
+            width: 920px;
+        } */
+        .mainimage{
+            display: flex;
+            justify-content: center;
+            width: 475px;
+            height: 375px;
+        }
+        #mainimage{
+            margin-top: 40px;
+        }
+        .writtencontent{
+            display: flex;
+            flex-direction: column;
+            width: 475px;
+            height: 375px;
+            /* margin-left: -150px;
+            margin-right: -175px; */
+            /* margin-top: 110px; */
+            justify-content: center;
+            align-items: start;
+        }
+        .upperpartofcontent{
+            display: flex;
+            justify-content: center;
+            width: 475px;
+            height: 70px;
+            gap: 271.5px;
+        }
+        .item1{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        #profilepic{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+        }
+        #name{
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            text-align: center;
+            font-size: 15px;
+            width: 90px;
+            margin-top:15px;
+            /* margin-left:3px; */
+        }
+        #comma{
+            width: 36px;
+            height: 33px;
+            margin-top: 15px;
+            /* margin-left: 55px;  */
+            padding-right: 20px;
+
+        }
+        .maintext{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            /* margin-top: 5px; */
+            /* padding-left: -75px; */
+            width: 475px;
+            height: 105px;
+            font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            text-align: center;
+            /* width: 2500px; */
+            /* margin-left: 150px; */
+            font-size: 14px;
+        }
+        .buttonpic{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+
+        /* CSSforeigthpageEnds */
+
+        /* CSSforninethpage */
+
+
+        .Ninethpage{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .uppertextof8thpage{
+            
+        }
+
+
+        
+    </style>
+</head>
+<body class="mainbackground">
+    <!-- firstpagestarts -->
+    <div class="firstpage">
+        <div class="header">            
+            <img src="https://qsumare.netlify.app/public/Osumare%20Logo-01%20(2)%204.png" width="100">
+            <button class="contactbutton">Contact us</button>  
+        </div>
+        <div class="Text">
+            <h1 class="innertext">Elevate <span id="firstcolortext">Real Estate Success</span> with <br>
+                Osumare's Digital Expertise</h1>
+            <div class="blurblue1"></div>
+            <p id="para">Tailored Solutions for Thriving in the Digital Real Estate Landscape</p>
+            <button class="textbutton">Get Started</button>
+        </div>
+        <div id="homeimage">
+            <img src="https://qsumare.netlify.app/public/Header%20image.png" width="625">
+        </div>
+    </div>
+    <!-- firstpageends -->
+
+
+
+    <!-- Secondpagestarts -->
+    <div class="secondpage">
+        <h1 id="headingof2ndpage">Real Estate-Focused Digital Mastery</h1>
+        <div class="contentof2ndpage">
+            <img src="https://qsumare.netlify.app/public/cuate.png" width="400">
+            <div class="textof2ndpage">
+                <h1 id="headingof2ndpagetext">Unlock the Potential of Digital Real Estate Excellence</h1>
+                <p id="maintextof2ndpage">Osumare, we understand that the real estate landscape demands a digital<br> presence that aligns with the intricacies of property marketing. Our range of <br>specialized services is meticulously designed to catapult your brand's success in <br> the ever-evolving digital property market.</p>
+                <button class="Getstarted">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- Secondpageends -->
+
+
+
+    <!-- Thirdpagestarts -->
+    <div class="thirdpage">
+        <div class="textofthirdpage">
+            <h1 id="headingofthirdpage">Our Service Offerings</h1>
+            <p id="textofheading">Strategies that Drive Property Market Excellence</p>
+            <div class="contentof3rdpage">
+                <div class="first">
+                    <div class="firstrow" id="firsrowcontent1">
+                        <img src="https://qsumare.netlify.app/public/Group%20117.png" class="image">
+                        <h1 class="thirdpagecontentheading">Automotive SEO</h1>
+                        <p class="thirdpagecontenttext">Drive Your Success with Automotive SEO: Ignite</p>
+                        <p class="thirdpagecontenttext">Online Visibility and Outrace the Competition.</p>
+                        <p class="thirdpagecontenttext">Accelerate Your Business Growth Today</p>
+                    </div>
+                    <div class="firstrow" id="firsrowcontent2">
+                        <img src="https://qsumare.netlify.app/public/Group%20117%20(1).png" class="image">
+                        <h1 class="thirdpagecontentheading">PPC Precision</h1>
+                        <p class="thirdpagecontenttext">Maximize visibility and drive quality traffic with</p>
+                        <p class="thirdpagecontenttext">meticulously targeted Pay-Per-Click campaigns.</p>
+                    </div>
+                    <div class="firstrow" id="firsrowcontent3">
+                        <img src="https://qsumare.netlify.app/public/Group%20117%20(2).png" class="image">
+                        <h1 class="thirdpagecontentheading">Social Acceleration</h1>
+                        <p class="thirdpagecontenttext">Engage and influence your audience across social</p>
+                        <p class="thirdpagecontenttext">media platforms, amplifying your brand's presence</p>
+                        <p class="thirdpagecontenttext">and connection.</p>
+                    </div>
+                    <div class="firstrow" id="firsrowcontent4">
+                        <img src="https://qsumare.netlify.app/public/content.png" class="image">
+                        <h1 class="thirdpagecontentheading">Content Excellence</h1>
+                        <p class="thirdpagecontenttext">Craft compelling, automotive-specific content that</p>
+                        <p class="thirdpagecontenttext">resonates with enthusiasts and drives engagement.</p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="secondrow">
+                        <img src="https://qsumare.netlify.app/public/content.png" class="image" >
+                        <h1 class="thirdpagecontentheading">Web Design</h1>
+                        <p class="thirdpagecontenttext">Transform visitors into customers with high-</p>
+                        <p class="thirdpagecontenttext">performance websites designed for seamless user</p>
+                        <p class="thirdpagecontenttext">experiences and increased conversions.</p>
+                    </div>
+                    <div class="secondrow">
+                        <img src="https://qsumare.netlify.app/public/Data%20driven%20(1).png" class="image">
+                        <h1 class="thirdpagecontentheading">Data-Driven Insights</h1>
+                        <p class="thirdpagecontenttext">Leverage data to refine your strategies, making</p>
+                        <p class="thirdpagecontenttext">informed decisions that drive revenue growth.</p>
+                    </div>
+                    <div class="secondrow">
+                        <img src="https://qsumare.netlify.app/public/Group%20117%20(6).png" class="image">
+                        <h1 class="thirdpagecontentheading">End-to-End Solutions</h1>
+                        <p class="thirdpagecontenttext">Drive Your Success with Automotive SEO: Ignite Online</p>
+                        <p class="thirdpagecontenttext">Visibility and Outrace the Competition. Accelerate</p>
+                        <p class="thirdpagecontenttext">Your Business Growth Today</p>
+                    </div>
+                    <div class="secondrow">
+                        <img src="https://qsumare.netlify.app/public/Group%20117%20(7).png" class="image">
+                        <h1 class="thirdpagecontentheading">Video marketing</h1>
+                        <p class="thirdpagecontenttext">From initial awareness to post-purchase loyalty, we</p>
+                        <p class="thirdpagecontenttext">offer full-funnel solutions that guide customers</p>
+                        <p class="thirdpagecontenttext">through every step of their journey.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="Getstarted2">Getstarted</button>
+        </div>
+    </div>
+     
+    <!-- Thirdpageends -->
+
+    <!-- Fourthpage -->
+
+    <div class="Fourthpage">
+        <div class="textoffourthpage">
+            <h1 id="headingoffourthpage">Navigating Real Estate's Digital Landscape</h1>
+            <p id="textofheading">Insights for Real Estate Marketing Advantage</p>
+        </div>
+        <div class="contentof4thpage">
+            <div class="leftcontent">
+                <div class="leftcontainers">
+                    <img src="https://qsumare.netlify.app/public/Group%20116.png" class="fourthpageimage">
+                    <div class="textsofleftcontent">
+                        <h1 class="fourthpagecontentheading">Market Trends Analysis</h1>
+                        <p class="fourthpagecontenttext">Predictive insights to guide real estate strategies.</p>
+                    </div>    
+                </div>
+                <div class="leftcontainers">
+                    <img src="https://qsumare.netlify.app/public/Group%20116%20(1).png" class="fourthpageimage">
+                    <div class="textsofleftcontent">
+                        <h1 class="fourthpagecontentheading">Targeted Buyer Persona</h1>
+                        <p class="fourthpagecontenttext">Understand and connect with your ideal property buyers.</p>
+                    </div>    
+                </div>
+                <div class="leftcontainers">
+                    <img src="https://qsumare.netlify.app/public/Group%20116%20(1).png" class="fourthpageimage">
+                    <div class="textsofleftcontent">
+                        <h1 class="fourthpagecontentheading">Competitor Insights</h1>
+                        <p class="fourthpagecontenttext">Stand out in the property market with informed strategies.</p>
+                    </div>    
+                </div>
+                <div class="leftcontainers">
+                    <img src="https://qsumare.netlify.app/public/phone-find-fill.png" class="fourthpageimageex">
+                    <div class="textsofleftcontent">
+                        <h1 class="fourthpagecontentheadingex">Visual Content Appeal</h1>
+                        <p class="fourthpagecontenttextex">Captivate buyers with appealing visuals and immersive experiences.</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="rightcontent">
+                <div class="mainimageoffourthpage">
+                <img src="https://qsumare.netlify.app/public/Frame%20892.png" class="mainimageof4thpage">
+            </div>
+        </div>    
+    </div>
+
+    <!-- EndOfFourthpage -->
+
+
+    <!--Fifthpage -->
+
+     <div class="secondpage">
+        <h1 id="headingof5thpage">Driving Property Inquiries to Conversions</h1>
+        <p id="headtextof5thpage">Streamlined Strategies for Real Estate Success</p>
+        <div class="contentof2ndpage">
+            <img src="https://qsumare.netlify.app/public/bro.png" width="400" height="320">
+            <div class="textof2ndpage">
+                <h1 id="headingof2ndpagetext">Optimized Path to Property Purchase</h1>
+                <p id="maintextof2ndpage">In the dynamic realm of real estate, the journey from a property inquiry to a successful<br> conversion demands a well-crafted approach. At Osumare, we specialize in guiding <br>potential buyers through this journey seamlessly, maximizing inquiries-turned- <br>conversions with expert strategies. </p>               
+                <button class="Getstarted">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EndOfFifthpage -->
+
+    <!-- Sixthpage -->
+
+    <div class="Sixthpage">
+        <h1 class="firstheading">Driving Property Inquiries to Conversions</h1>
+        <div class="firstcontent">
+            <div class="firsthorizontalrow">
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon.png" class="image2">
+                    <h1 class="contentheading">Call-to-Action Optimization</h1>
+                    <p class="contenttext">Our carefully crafted CTAs guide potential buyers through the property journey, enhancing engagement and conversion rates.</p>
+                </div>
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(1).png" class="image2">
+                    <h1 class="contentheading">Landing Page Efficiency</h1>
+                    <p class="contenttext">Tailored landing pages are designed for maximum property lead conversion. They provide seamless user experiences and clear pathways for inquiry submission.</p>
+                </div>
+            </div>
+            <div class="secondhorizontalrow">    
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(2).png" class="image2">
+                    <h1 class="contentheading">Social Proof Utilization</h1>
+                    <p class="contenttext">Leverage the power of testimonials and success stories from satisfied buyers to build trust and credibility, encouraging hesitant prospects to take action</p>
+                </div>
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(3).png" class="image2">
+                    <h1 class="contentheading">Mobile-Friendly Experience</h1>
+                    <p class="contenttext">With a responsive design approach, our strategies ensure a seamless browsing experience across all devices. This responsiveness enhances engagement and conversions by accommodating the preferences of on-the-go property seekers.</p>
+                </div>
+            </div>
+        <h1 class="secondheading">Our Expertise in Action</h1>
+        <div class="secondcontent">    
+            <div class="firsthorizontalrow">
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(4).png" class="image">
+                    <h1 class="contentheading">Effective CTAs</h1>
+                    <p class="contenttext">See how our strategic CTAs drove a significant increase in property inquiries and accelerated sales for a real estate agency.</p>
+                </div>
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(5).png" class="image">
+                    <h1 class="contentheading">Conversion-Optimized Landing Pages</h1>
+                    <p class="contenttext">Explore a case study where our landing page optimization increased property lead conversion rates by 30%</p>
+                </div>
+            </div>
+            <div class="secondhorizontalrow">
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(6).png" class="image">
+                    <h1 class="contentheading">Trust Building with Social Proof</h1>
+                    <p class="contenttext">Discover how leveraging client testimonials boosted buyer confidence, leading to higher conversion rates for a property development project</p>
+                </div>
+                <div class="content">
+                    <img src="https://qsumare.netlify.app/public/icon%20(7).png" class="image">
+                    <h1 class="contentheading">Mobile-First Success:</h1>
+                    <p class="contenttext">Learn how our mobile-responsive design approach resulted in a 25% increase in inquiries from mobile users for a real estate agency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--EndOfSixthpage -->
+
+    <!-- Seventhpage -->
+
+    <div class="Seventhpage">
+        <div class="blurblue2"></div>
+        <div class="contentof7thpage">
+            <h1 class="headingof7thpage">Your Peace of Mind</h1>
+            <p class="textof7thpage">Through our conversion-focused strategies, we ensure that property seekers are not just visitors, but engaged prospects ready to make their next move in the real estate market</p>
+            <button class="Getstarted3">Get Started</button>
+        </div>
+        <div class="blurred2"></div>
+    </div>
+
+    <!-- EndOfSeventhpage -->
+
+    <!-- EigthPage -->
+
+    <div class="EigthPage">
+        <div class="uppertextof8thpage">
+            <h1 class="headingof7thpage">What Our Pharma Partners Say</h1>
+            <p class="textof7thpage">Driving Transformations, One Brand at a Time</p>
+        </div>
+        <div class="maincontent">
+            <!-- <div class="insidediv"> -->
+                <div class="mainimage">
+                    <img src="https://qsumare.netlify.app/public/Video.png" height="295px" width="395px" id="mainimage">
+                </div>
+                <div class="writtencontent">
+                    <div class="upperpartofcontent">
+                        <div class="item1">
+                            <img src="https://qsumare.netlify.app/public/Avatar%20of%20team.png" id="profilepic">
+                            <h1 class="Name" id="name">Tabish khan</h1>
+                        </div>
+                        <div class="item2">
+                            <img src="https://qsumare.netlify.app/public/Symbol.png" id="comma">
+                        </div>
+                    </div>
+                    <div class="maintext">
+                        <p class="maintextof8thpage">Osumare's expertise in pharma marketing is unparalleled. Their strategies helped us navigate complex regulations while driving remarkable growth.</p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="buttonpic">
+            <div class="firstbutton">
+                <img src="https://qsumare.netlify.app/public/scroll%20buttion%20(1).png">
+            </div>
+            <div class="secondbutton">
+                <img src="https://qsumare.netlify.app/public/scroll%20buttion.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- EndOfEigthPage -->
+
+    <!-- Ninethpage -->
+
+    <div class="Ninethpage">
+        <div class="uppertextof9thpage">
+            <h1 class="headingof7thpage">Frequently Asked Questions</h1>
+            <p class="textof7thpage">Pinpoint your audience with precision, ensuring your marketing efforts reach those most likely to engage with your brand.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
